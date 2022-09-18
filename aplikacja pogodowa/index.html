@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pogoda</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="city-name">
+                <h1 class="town"></h1>
+            </div>
+
+            <div class="header">
+                <div class="search"><input class="input-town" type="text" placeholder="Wpisz miasto" onkeypress="return /[a-z-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]/i.test(event.key)"><button
+                        class="btn">wyślij</button>
+                </div>
+                <div class="img">
+                    <img src="" alt="weather icon" class="weather-img">
+                </div>
+
+            </div>
+
+            <div class="error"></div>
+
+            <div class="table">
+                <table class="tab">
+                    <tr class="row">
+                        <td class="column">Temperatura :</td>
+                        <td class="temp"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">ciśnienie :</td>
+                        <td class="pressure"></td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="column">Prędkość wiatru :</td>
+                        <td class="wind-speed"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">Wilgotość :</td>
+                        <td class="humidity"></td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">pogoda :</td>
+                        <td class="cloudiness"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
